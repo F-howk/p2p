@@ -1,0 +1,226 @@
+<style>
+    #info {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    #info .row {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    #info .col-sm-2 {
+        padding: 0;
+        width: 96px;
+    }
+
+    #info .col-sm-2>div {
+        width: 94px;
+        height: 94px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+    #info .col-sm-2 img {
+        width: 72px;
+        height: 72px;
+    }
+
+    #info .col-sm-10 {
+        margin-top: 5px;
+    }
+
+    #info .row_bottom {
+        padding-top: 10px;
+    }
+
+    #info .money {
+        font-size: 18px;
+    }
+
+    #info .money span {
+        color: #337ab7;
+    }
+
+    #info .row_btn {
+        text-align: center;
+        width: 400px;
+        height: 46px;
+        margin: 50px auto 0px auto;
+    }
+
+    #info .row_btn button {
+        width: 106px;
+        height: 46px;
+        border-radius: 6px;
+    }
+
+    #info .row_btn button a {
+        font-size: 18px;
+        color: #fff;
+
+    }
+
+    #info .row_btn button a:hover {
+        text-decoration: none;
+    }
+
+    #info .approves {
+        padding: 40px 0px 0px 10px;
+    }
+
+    .approves>div {
+        height: 56px;
+    }
+
+    .approves>div>img {
+        float: left;
+    }
+
+    .approves>div>div {
+        height: 56px;
+        float: left;
+        margin-left: 10px;
+    }
+
+    .approves h5 {
+        margin-top: 0;
+        font-weight: bold;
+    }
+
+    .approves>p {
+        margin-top: 8px;
+    }
+
+    #info .approves:nth-last-child(2) {
+        padding-left: 20px;
+    }
+
+    .change-btn {
+        line-height: 94px;
+    }
+    #myModal .col-sm-2{
+        text-align: right;
+        line-height: 34px;
+        margin-bottom: 15px;
+    }
+    #myModal .col-sm-10{
+        margin-bottom: 15px;
+    }
+    #myModal .col-sm-10 input{
+        width: 60%;
+    }
+</style>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">修改用户信息</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="nickname" class="col-sm-2 control-label">昵称</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="nickname" placeholder="昵称">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-2 control-label">邮箱</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="email" placeholder="邮箱">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary save">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="info">
+    <div class="row row_top">
+        <div class="col-sm-2">
+            <div>
+                <img src="/dist/img/head_icon.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-sm-8">
+                <p>昵 称：<span class="nickname">源代码教育</span></p>
+                <p>用户名：<span class="username">小强</span></p>
+                <p>最后登录时间：<span class="lastlogintime">2016-10-25 15:30:10</span></p>
+        </div>
+        <div class="col-sm-2 change-btn">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">修改用户信息</button>
+        </div>
+    </div>
+    <div class="row row_bottom">
+        <div class="col-sm-4 money">
+            总金额：<span class="totalmoney">10000元</span>
+        </div>
+        <div class="col-sm-4 money">
+            可用金额：<span class="usablemoney">8000元</span>
+        </div>
+        <div class="col-sm-4 money">
+            冻结金额：<span class="blockedmoney">2000元</span>
+        </div>
+        <div class="row_btn">
+            <button type="button" class="btn btn-primary"><a href="#pay">账户充值</a> </button>
+            <button type="button" class="btn btn-danger"><a href="#withdraw_deposit">账户提现</a></button>
+        </div>
+        <div class="col-sm-4 approves">
+            <div>
+                <img src="/dist/img/shiming.png" alt="">
+                <div>
+                    <h5>实名认证</h5>
+                    <p>未认证 <a href="#personal/auth">马上认证</a></p>
+                </div>
+            </div>
+            <p>实名认证之后才能在平台投资</p>
+        </div>
+        <div class="col-sm-4 approves">
+            <div>
+                <img src="/dist/img/shouji.jpg" alt="">
+                <div>
+                    <h5>手机认证</h5>
+                    <p>已认证 <a href="">查看</a></p>
+                </div>
+            </div>
+            <p>可以收到系统操作信息,并增加使用安全性</p>
+        </div>
+        <div class="col-sm-4 approves">
+            <div>
+                <img src="/dist/img/youxiang.jpg" alt="">
+                <div>
+                    <h5>邮箱认证</h5>
+                    <p>已认证 <a href="">查看</a></p>
+                </div>
+            </div>
+            <p>您可以设置邮箱来接收重要信息</p>
+        </div>
+        <div class="col-sm-4 approves">
+            <div>
+                <img src="/dist/img/baozhan.jpg" alt="">
+                <div>
+                    <h5>VIP会员</h5>
+                    <p>普通用户 <a href="">查看</a></p>
+                </div>
+            </div>
+            <p>VIP会员，让你更快捷的投资</p>
+        </div>
+        <div class="col-sm-8 approves">
+            <div id="pie" style="width: 100%;height:350%;"></div>
+        </div>
+    </div>
+</div>
+<script src="/lib/echarts/echarts.js"></script>
+<script src="/dist/js/info.min.js"></script>

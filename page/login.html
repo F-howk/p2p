@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/dist/css/reset.min.css">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dist/css/index.min.css">
+    <link rel="stylesheet" href="/dist/css/register.min.css">
+
+</head>
+
+<body>
+    <!-- 模态 -->
+    <div id="myModal"></div>
+    <div class="body_Modal">
+        <span class="glyphicon glyphicon-remove ico"></span>
+        <p class="title">登录状态</p>
+        <p class="status">登录成功！！</p>
+        <button type="button" class="btn">确定</button>
+    </div>
+    <!-- 头部导航 -->
+    <nav id="nav_top" class="navbar navbar-inverse">
+        <div class="container">
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/index.html">首页</a></li>
+                    <li><a href="#">登录</a></li>
+                    <li><a href="/page/register.html">注册</a></li>
+                    <li><a href="/index.html#pay">赶快充值</a></li>
+                    <li><a href="#">帮助</a></li>
+                    <li><a href="#">联系客服</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 页头导航 -->
+    <nav id="nav_page" class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="/dist/img/logo.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="title"><a>用户登录</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 主体 -->
+    <div id="main" class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">用户登录</h3>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal">
+                    <p style="margin-left: 18%;">请输入用户名和密码</p>
+
+                    <div class="form-group">
+
+                        <label for="inputEmail3" class="col-sm-2 control-label">用户名</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="userName">
+
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3">
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="button" class="btn btn-default" id="login_btn"
+                                style="width: 100px;margin-left: 12%;">登录</button>
+                            <a href="/page/register.html"> 新用户，马上注册</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+                    <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+                    <p> 地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+                    <p> 电  话： 028-86261949 / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+                    <p><a href="#"> 蜀ICP备14030149号-1</a>&emsp;&emsp;&emsp;<a href="#">蜀公网安备510114990541</a></p>
+                </div>
+                <div class="col-md-2">
+                    <p>官方微博：</p>
+                    <img src="/dist/img/tecent.png" alt="">
+                    <img src="/dist/img/sina.png" alt="">
+                </div>
+                <div class="col-md-2">
+                    <p>官方微信：</p>
+                    <img src="/dist/img/wx.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/lib/jquery/jquery.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="/dist/js/login_s.min.js"></script>
+</body>
+
+</html>

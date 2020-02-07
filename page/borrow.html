@@ -1,0 +1,185 @@
+<link rel="stylesheet" href="/dist/css/borrow.min.css">
+<div class="container" id="borrow">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>
+                信用贷
+            </h2>
+            <div>
+                <p>可借金额 <i> ¥ 2,000.00</i></p>
+                <a>申请条件</a>
+                <p>仅限成都地区</p>
+                <ul>
+                    <li>填写基本资料</li>
+                    <li>身份认证</li>
+                    <li>视频认证</li>
+                </ul>
+                <button type="button" class="btn btn-primary btn-lg borrow-btn" data-toggle="modal" data-target="#myModal">
+                    立即申请
+                </button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2>
+                车易贷
+            </h2>
+            <div>
+                <p>可借金额 <i> ¥ 2,000.00</i></p>
+                <a>申请条件</a>
+                <p>仅限成都地区</p>
+                <ul>
+                    <li>填写基本资料</li>
+                    <li>身份认证</li>
+                    <li>视频认证</li>
+                </ul>
+                <button type="button" class="btn btn-primary btn-lg borrow-btn" data-toggle="modal" data-target="#myModal">
+                    立即申请
+                </button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2>
+                房易贷
+            </h2>
+            <div>
+                <p>可借金额 <i> ¥ 2,000.00</i></p>
+                <a>申请条件</a>
+                <p>仅限成都地区</p>
+                <ul>
+                    <li>填写基本资料</li>
+                    <li>身份认证</li>
+                    <li>视频认证</li>
+                </ul>
+                <button type="button" class="btn btn-primary btn-lg borrow-btn" data-toggle="modal" data-target="#myModal">
+                    立即申请
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 蒙层 -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"
+                        class="glyphicon glyphicon-remove"></span></button>
+                <div class="alert alert-info title" role="alert">
+                    <h3>信用借款</h3>
+                    <span>授信额度：<i>2000</i> </span> <span>可借金额：<i>2000</i> </span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="page-header clearfix">
+                    <h3>借款信息</h3><span class="h2">信用标</span>
+                </div>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <span> 借款金额</span>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="borrowmoney">
+                            <div class="input-group-addon">元</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span> 借款利息</span>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="interest">
+                            <div class="input-group-addon">%</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <span>借款期限</span>
+                        <div class="input-group">
+                            <select class="form-control borrowtime" style="width:196px;">
+                                <option value="1">1</option>
+                                <option value="3">3</option>
+                                <option value="6">6</option>
+                                <option value="9">9</option>
+                                <option value="12">12</option>
+                                <option value="24">24</option>
+                            </select>
+                            <div class="input-group-addon">月</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <span>还款方式</span>
+                        <div class="input-group">
+                            <div class="radio">
+                                <label>
+                                    <input class="repaytype" type="radio" name="repaytype" id="blankRadio1" value="0"
+                                        aria-label="">
+                                </label>
+                                按月分期
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input class="repaytype" type="radio" name="repaytype" id="blankRadio2" value="1"
+                                        aria-label="">
+                                </label>
+                                按月到期
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span>最小投标</span>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="minbid">
+                            <div class="input-group-addon">元</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span> 投标奖金</span>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="bouns" placeholder="0">
+                            <div class="input-group-addon">%</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span> 招标天数</span>
+                        <div class="input-group">
+                            <select class="form-control days" style="width:196px;">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <div class="input-group-addon">天</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span>借款标题</span>
+                        <div class="input-group w">
+                            <input type="text" class="form-control" id="title">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span>借款描述</span>
+                        <div class="input-group w">
+                            <textarea class="form-control info" rows="3" style="border-radius:0"></textarea>
+                            <button type="button" class="btn">提交申请</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="about">
+                    <h3>相关费用</h3>
+                    <p>利息 - -</p>
+                    <p>奖金 - -</p>
+                    <p>管理费 - -</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/dist/js/borrow.min.js"></script>

@@ -1,0 +1,207 @@
+<link rel="stylesheet" href="/dist/css/userBorrow.min.css">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">投资详情</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="chargemoney" class="col-sm-2 control-label">金额</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="chargemoney" placeholder="最小金额">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary bid-btn">确认</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" id="userBorrow">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">借款人</h3>
+                </div>
+                <div class="panel-body">
+                    <img src="/dist/img/head_icon.jpg" alt="">
+                    <p class="username">zs</p>
+                    <div class="service">
+                        <p>籍贯： 四川 - 成都</p>
+                        <p>专职客服：<a href="#">码妹妹</a> </p>
+                        <p>认证信息：<span class="glyphicon glyphicon-user"></span> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 borrow">
+            <h3 id="userid">zs借款 <span>信</span></h3>
+            <p>借款金额 <span id="borrowmoney">2,000.00</span></p>
+            <p>年化利率 <span id="interest">10.00%</span></p>
+            <p>借款期限 <span id="borrowtime">3月</span></p>
+            <p>投标奖励 <span id="bouns">0.00</span></p>
+            <p>还款方式 <span id="repaytype">按月分期还款</span></p>
+            <p>最小投标 <span id="minbid">20.00</span></p>
+            <p>剩余时间 </p>
+        </div>
+        <div class="col-md-3 bid">
+            <p>投标总数 <span id="bidNum">0</span></p>
+            <p>还需金额 <span id="needMoney">0.00元</span></p>
+            <p>投标进度</p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20"
+                    aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                    <span class="sr-only">100% Complete</span>
+                </div>
+            </div>
+            <p>还款中</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">投标</button>
+        </div>
+    </div>
+    <div class="panel panel-default meg">
+        <div class="panel-heading"> 借款人信息</div>
+        <div class="panel-body">
+            <p>注册时间 <span>2015-03-30</span></p>
+            <p>借款额度 <span>2000</span></p>
+            <p>性别 <span>男 </span></p>
+            <p> 年龄 <span>25</span></p>
+            <p>文化程度 <span>硕士研究生</span></p>
+            <p>每月收入 <span>3000-4999</span></p>
+        </div>
+    </div>
+
+    <div class="panel panel-default meg">
+        <div class="panel-heading">
+            <h3 class="panel-title">审核认证信息</h3>
+        </div>
+        <div class="panel-body">
+            <p>认证时态度 <span>优</span></p>
+            <p>信贷知识掌握情况 <span>优</span></p>
+            <p> 借款感言 <span>给我2000度过难关</span></p>
+            <p> 审核员认证意见 <span>啊啊啊啊啊</span></p>
+
+        </div>
+    </div>
+    <div class="panel panel-default material;">
+        <div class="panel-heading">
+            <h3 class="panel-title">材料信息</h3>
+        </div>
+        <div class="panel-body material">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>材料类型</th>
+                        <th>材料数量</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>本人身份证</td>
+                        <td> 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">还款情况</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>还款状态</th>
+                        <th>最近一周 </th>
+                        <th> 最近1月</th>
+                        <th>最近6月</th>
+                        <th>6个月前 </th>
+                        <th>总计[?]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>提前还款</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <td>准时还款</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <td>逾期已还</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <td>逾期未还</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">投标记录</h3>
+        </div>
+        <div class="panel-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>投标人</th>
+                        <th>年利率</th>
+                        <th>有效金额(¥)</th>
+                        <th>投标时间</th>
+                        <th>类型</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="name">si*****</td>
+                        <td class="interest">10%</td>
+                        <td><span class="chargemoney">1,000.00</span></td>
+                        <td id="time">2016-05-11 06:42:11</td>
+                        <td>手动投标</td>
+                    </tr>
+                    <tr>
+                        <td>xia*****</td>
+                        <td>10%</td>
+                        <td><span>1,000.00</span></td>
+                        <td>2016-05-12 13:44:01</td>
+                        <td>手动投标</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="/dist/js/userBorrow.min.js"></script>
